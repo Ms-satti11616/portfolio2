@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdul Moiz Satti | Cybersecurity & AI Portfolio</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card-bg: #161b22;
+      --border: #30363d;
+      --text: #c9d1d9;
+      --text-bright: #ffffff;
+      --accent: #e53e3e;
+      --accent-glow: rgba(229, 62, 62, 0.15);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background-color: var(--bg); color: var(--text); line-height: 1.6; padding: 40px 20px; }
+    .container { max-width: 800px; margin: 0 auto; }
+    header { border-bottom: 1px solid var(--border); padding-bottom: 24px; margin-bottom: 32px; }
+    h1 { color: var(--text-bright); font-size: 2.2rem; margin-bottom: 8px; }
+    h2 { color: var(--text-bright); font-size: 1.4rem; margin-bottom: 16px; border-left: 4px solid var(--accent); padding-left: 10px; }
+    .tagline { font-size: 1.1rem; color: #8b949e; margin-bottom: 16px; }
+    .links-bar { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 16px; }
+    .btn { background: var(--card-bg); border: 1px solid var(--border); color: var(--text-bright); padding: 8px 16px; border-radius: 6px; text-decoration: none; font-size: 0.9rem; }
+    .btn:hover { border-color: var(--accent); background: var(--accent-glow); color: var(--accent); }
+    section { margin-bottom: 36px; }
+    .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 20px; margin-bottom: 16px; }
+    .card h3 { color: var(--text-bright); margin-bottom: 6px; }
+    
+    .form-group { margin-bottom: 14px; }
+    label { display: block; margin-bottom: 6px; font-size: 0.9rem; color: var(--text-bright); }
+    input, textarea { width: 100%; padding: 10px; background: #0d1117; border: 1px solid var(--border); border-radius: 6px; color: #fff; font-size: 0.95rem; }
+    input:focus, textarea:focus { border-color: var(--accent); outline: none; }
+    .submit-btn { background: var(--accent); border: none; color: #fff; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-size: 0.95rem; font-weight: 600; }
+    .submit-btn:hover { opacity: 0.9; }
+
+    footer { text-align: center; color: #484f58; font-size: 0.85rem; margin-top: 40px; border-top: 1px solid var(--border); padding-top: 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Abdul Moiz Satti</h1>
+      <p class="tagline">Cybersecurity Undergraduate &amp; AI Systems Explorer</p>
+      <p>Building secure autonomous agent workflows, threat-modeled AI integrations, and offensive security tooling.</p>
+      <div class="links-bar">
+        <a href="https://linkedin.com" target="_blank" class="btn">LinkedIn</a>
+        <a href="https://github.com/Ms-satti11616" target="_blank" class="btn">GitHub</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Featured Capstone Project</h2>
+      <div class="card">
+        <h3>Local Study &amp; Lab Workspace Assistant</h3>
+        <p>A locally sandboxed AI agent built on Anthropic's Model Context Protocol (MCP). Communicates over <code>stdio</code> with local filesystem tools to automate note structuring and verification loops without cloud token exposure.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Get In Touch</h2>
+      <div class="card">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="99a082b4-6a2b-42bb-a9ed-0eacc0f12c85" />
+          
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="name@domain.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Type your message here..." required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Abdul Moiz Satti &bull; Hosted on GitHub Pages</p>
+    </footer>
+  </div>
+</body>
+</html>
