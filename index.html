@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="description" content="Abdul Moiz Satti - Cybersecurity Undergraduate and AI Systems Portfolio">
   <title>Abdul Moiz Satti | Cybersecurity & AI Portfolio</title>
   <style>
     :root {
@@ -13,29 +14,218 @@
       --text-bright: #ffffff;
       --accent: #e53e3e;
       --accent-glow: rgba(229, 62, 62, 0.15);
+      --badge-bg: #21262d;
+      --badge-text: #58a6ff;
     }
-    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
-    body { background-color: var(--bg); color: var(--text); line-height: 1.6; padding: 40px 20px; }
-    .container { max-width: 800px; margin: 0 auto; }
-    header { border-bottom: 1px solid var(--border); padding-bottom: 24px; margin-bottom: 32px; }
-    h1 { color: var(--text-bright); font-size: 2.2rem; margin-bottom: 8px; }
-    h2 { color: var(--text-bright); font-size: 1.4rem; margin-bottom: 16px; border-left: 4px solid var(--accent); padding-left: 10px; }
-    .tagline { font-size: 1.1rem; color: #8b949e; margin-bottom: 16px; }
-    .links-bar { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 16px; }
-    .btn { background: var(--card-bg); border: 1px solid var(--border); color: var(--text-bright); padding: 8px 16px; border-radius: 6px; text-decoration: none; font-size: 0.9rem; }
-    .btn:hover { border-color: var(--accent); background: var(--accent-glow); color: var(--accent); }
-    section { margin-bottom: 36px; }
-    .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 20px; margin-bottom: 16px; }
-    .card h3 { color: var(--text-bright); margin-bottom: 6px; }
-    
-    .form-group { margin-bottom: 14px; }
-    label { display: block; margin-bottom: 6px; font-size: 0.9rem; color: var(--text-bright); }
-    input, textarea { width: 100%; padding: 10px; background: #0d1117; border: 1px solid var(--border); border-radius: 6px; color: #fff; font-size: 0.95rem; }
-    input:focus, textarea:focus { border-color: var(--accent); outline: none; }
-    .submit-btn { background: var(--accent); border: none; color: #fff; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-size: 0.95rem; font-weight: 600; }
-    .submit-btn:hover { opacity: 0.9; }
 
-    footer { text-align: center; color: #484f58; font-size: 0.85rem; margin-top: 40px; border-top: 1px solid var(--border); padding-top: 20px; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 24px 16px;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+
+    h1 {
+      color: var(--text-bright);
+      font-size: clamp(1.8rem, 5vw, 2.4rem);
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      font-size: clamp(1rem, 3.5vw, 1.15rem);
+      color: #8b949e;
+      margin-bottom: 12px;
+      font-weight: 500;
+    }
+
+    .bio {
+      font-size: 1rem;
+      color: #e6edf3;
+      margin-bottom: 18px;
+    }
+
+    .links-bar {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      min-width: 120px;
+      padding: 10px 20px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      color: var(--text-bright);
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+
+    .btn:hover, .btn:active {
+      border-color: var(--accent);
+      background: var(--accent-glow);
+      color: var(--accent);
+    }
+
+    section {
+      margin-bottom: 36px;
+    }
+
+    h2 {
+      color: var(--text-bright);
+      font-size: clamp(1.3rem, 4vw, 1.5rem);
+      margin-bottom: 16px;
+      border-left: 4px solid var(--accent);
+      padding-left: 12px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: clamp(16px, 4vw, 24px);
+      margin-bottom: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .card h3 {
+      color: var(--text-bright);
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #c9d1d9;
+      margin-bottom: 14px;
+    }
+
+    .tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+
+    .tag {
+      background: var(--badge-bg);
+      color: var(--badge-text);
+      font-size: 0.8rem;
+      padding: 4px 10px;
+      border-radius: 20px;
+      border: 1px solid #30363d;
+      font-weight: 500;
+    }
+
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .project-link:hover {
+      text-decoration: underline;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-bright);
+    }
+
+    input, textarea {
+      width: 100%;
+      min-height: 48px;
+      padding: 12px 14px;
+      background: #0d1117;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text-bright);
+      font-size: 16px;
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    input:focus, textarea:focus {
+      border-color: var(--accent);
+      outline: none;
+    }
+
+    .submit-btn {
+      width: 100%;
+      min-height: 48px;
+      background: var(--accent);
+      border: none;
+      color: #ffffff;
+      padding: 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .submit-btn:hover {
+      opacity: 0.9;
+    }
+
+    footer {
+      text-align: center;
+      color: #484f58;
+      font-size: 0.85rem;
+      margin-top: 40px;
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+    }
+
+    @media (min-width: 600px) {
+      body {
+        padding: 40px 20px;
+      }
+      .submit-btn {
+        width: auto;
+        padding: 12px 32px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -43,10 +233,10 @@
     <header>
       <h1>Abdul Moiz Satti</h1>
       <p class="tagline">Cybersecurity Undergraduate &amp; AI Systems Explorer</p>
-      <p>Building secure autonomous agent workflows, threat-modeled AI integrations, and offensive security tooling.</p>
+      <p class="bio">Building secure autonomous agent workflows, threat-modeled AI integrations, and offensive security tooling.</p>
       <div class="links-bar">
-        <a href="https://linkedin.com" target="_blank" class="btn">LinkedIn</a>
-        <a href="https://github.com/Ms-satti11616" target="_blank" class="btn">GitHub</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn">LinkedIn</a>
+        <a href="https://github.com/Ms-satti11616" target="_blank" rel="noopener noreferrer" class="btn">GitHub</a>
       </div>
     </header>
 
@@ -54,7 +244,14 @@
       <h2>Featured Capstone Project</h2>
       <div class="card">
         <h3>Local Study &amp; Lab Workspace Assistant</h3>
-        <p>A locally sandboxed AI agent built on Anthropic's Model Context Protocol (MCP). Communicates over <code>stdio</code> with local filesystem tools to automate note structuring and verification loops without cloud token exposure.</p>
+        <div class="tags">
+          <span class="tag">Anthropic MCP</span>
+          <span class="tag">Python</span>
+          <span class="tag">Local stdio</span>
+          <span class="tag">Zero-Token Exposure</span>
+        </div>
+        <p>A locally sandboxed AI agent built on Anthropic's Model Context Protocol (MCP). Communicates over stdio with local filesystem tools to automate note structuring and verification loops without exposing cloud tokens.</p>
+        <a href="https://github.com/Ms-satti11616/portfolio2" target="_blank" class="project-link">View Architecture &amp; Repository &rarr;</a>
       </div>
     </section>
 
@@ -76,7 +273,7 @@
 
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" placeholder="Type your message here..." required></textarea>
+            <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
           </div>
 
           <button type="submit" class="submit-btn">Send Message</button>
