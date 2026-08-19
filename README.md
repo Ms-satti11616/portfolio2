@@ -45,4 +45,11 @@ PrerequisitesPython 3.10+Local directory at ~/lab_workspace containing Markdown 
 Bashpython3 workspace_mcp_agent.py --test
 Starting the stdio MCP ServerExecute the agent directly for integration with standard MCP hosts:
 Bashpython3 workspace_mcp_agent.py
-📜 Verified Credentials FeaturedTryHackMe: Cyber Security 101 Learning Path (45h 23m) & Hacker Holidays: Byte Lotus CTF  Mastercard: Cybersecurity Job Simulation (Forage)  EY (Ernst & Young): Forensic & Integrity Services Job Simulation (Forage)  Hasnain Karimain Software House: Python Development Internship (PSEB & Ministry of IT)  Cisco Networking Academy: Introduction to CybersecurityAnthropic Academy: AI Fluency: Framework & Foundations👤 AuthorAbdul Moiz SattiUndergraduate Researcher in Cybersecurity & AI SystemsGitHub: @Ms-satti11616
+📜 Verified Credentials FeaturedTryHackMe: Cyber Security 101 Learning Path (45h 23m) & Hacker Holidays: Byte Lotus CTF
+Mastercard: Cybersecurity Job Simulation (Forage)
+EY (Ernst & Young): Forensic & Integrity Services Job Simulation (Forage)
+Hasnain Karimain Software House: Python Development Internship (PSEB & Ministry of IT)
+Cisco Networking Academy: Introduction to CybersecurityAnthropic Academy:
+AI Fluency: Framework & Foundations
+👤 Author
+Abdul Moiz SattiUndergraduate Researcher in Cybersecurity & AI SystemsGitHub: @Ms-satti11616
