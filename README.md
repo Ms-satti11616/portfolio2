@@ -40,6 +40,9 @@ The included `workspace_mcp_agent.py` acts as a local stdio MCP server enabling 
 ├── workspace_mcp_agent.py   # Standalone Python MCP agent server
 └── README.md                # Project documentation
 
-💻 Running the Local MCP AgentPrerequisitesPython 3.10+Local directory at ~/lab_workspace containing Markdown (.md) research notesSelf-Test & VerificationRun the built-in diagnostic test to verify schema compliance and tool listing:Bashpython3 workspace_mcp_agent.py --test
-Starting the stdio MCP ServerExecute the agent directly for integration with standard MCP hosts:Bashpython3 workspace_mcp_agent.py
+💻 Running the Local MCP Agent
+PrerequisitesPython 3.10+Local directory at ~/lab_workspace containing Markdown (.md) research notesSelf-Test & VerificationRun the built-in diagnostic test to verify schema compliance and tool listing:
+Bashpython3 workspace_mcp_agent.py --test
+Starting the stdio MCP ServerExecute the agent directly for integration with standard MCP hosts:
+Bashpython3 workspace_mcp_agent.py
 📜 Verified Credentials FeaturedTryHackMe: Cyber Security 101 Learning Path (45h 23m) & Hacker Holidays: Byte Lotus CTF  Mastercard: Cybersecurity Job Simulation (Forage)  EY (Ernst & Young): Forensic & Integrity Services Job Simulation (Forage)  Hasnain Karimain Software House: Python Development Internship (PSEB & Ministry of IT)  Cisco Networking Academy: Introduction to CybersecurityAnthropic Academy: AI Fluency: Framework & Foundations👤 AuthorAbdul Moiz SattiUndergraduate Researcher in Cybersecurity & AI SystemsGitHub: @Ms-satti11616
