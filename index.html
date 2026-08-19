@@ -3,8 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <meta name="description" content="Abdul Moiz Satti - Cybersecurity Undergraduate and AI Systems Portfolio">
-  <title>Abdul Moiz Satti | Cybersecurity & AI Portfolio</title>
+  
+  <!-- SEO & Social Graph Meta Tags -->
+  <title>Abdul Moiz Satti | Cybersecurity &amp; AI Systems Portfolio</title>
+  <meta name="title" content="Abdul Moiz Satti | Cybersecurity & AI Systems Portfolio">
+  <meta name="description" content="Portfolio of Abdul Moiz Satti, focusing on offensive security, threat-modeled AI agent integrations, and secure tool workflows.">
+  <meta name="keywords" content="Abdul Moiz Satti, Cybersecurity, AI Systems, Offensive Security, Penetration Testing, MCP, Python">
+  <meta name="author" content="Abdul Moiz Satti">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ms-satti11616.github.io/portfolio2/">
+  <meta property="og:title" content="Abdul Moiz Satti | Cybersecurity &amp; AI Systems Portfolio">
+  <meta property="og:description" content="Offensive security methodologies, threat-modeled AI agent architectures, and autonomous tooling.">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/Ms-satti11616">
+
+  <!-- Twitter Meta -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://ms-satti11616.github.io/portfolio2/">
+  <meta property="twitter:title" content="Abdul Moiz Satti | Cybersecurity &amp; AI Systems Portfolio">
+  <meta property="twitter:description" content="Offensive security methodologies, threat-modeled AI agent architectures, and autonomous tooling.">
+
   <style>
     :root {
       --bg: #0d1117;
@@ -191,6 +211,12 @@
       outline: none;
     }
 
+    /* Honeypot Spam Trap */
+    .hidden-trap {
+      display: none !important;
+      visibility: hidden !important;
+    }
+
     .submit-btn {
       width: 100%;
       min-height: 48px;
@@ -250,33 +276,36 @@
           <span class="tag">Local stdio</span>
           <span class="tag">Zero-Token Exposure</span>
         </div>
-        <p>A locally sandboxed AI agent built on Anthropic's Model Context Protocol (MCP). Communicates over stdio with local filesystem tools to automate note structuring and verification loops without exposing cloud tokens.</p>
-        <a href="https://github.com/Ms-satti11616/portfolio2" target="_blank" class="project-link">View Architecture &amp; Repository &rarr;</a>
+        <p>A locally sandboxed AI agent built on Anthropic's Model Context Protocol (MCP). Communicates over stdio with local filesystem tools to automate note structuring and verification loops without cloud token exposure.</p>
+        <a href="https://github.com/Ms-satti11616/portfolio2" target="_blank" rel="noopener noreferrer" class="project-link">View Architecture &amp; Repository &rarr;</a>
       </div>
     </section>
 
     <section>
       <h2>Get In Touch</h2>
       <div class="card">
-        <form action="https://api.web3forms.com/submit" method="POST">
+        <form action="https://api.web3forms.com/submit" method="POST" id="main-contact-form">
           <input type="hidden" name="access_key" value="99a082b4-6a2b-42bb-a9ed-0eacc0f12c85" />
           
+          <!-- Anti-Spam Honeypot -->
+          <input type="checkbox" name="botcheck" class="hidden-trap" style="display: none;">
+
           <div class="form-group">
             <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required />
+            <input type="text" id="name" name="name" placeholder="Your Name" maxlength="80" required />
           </div>
 
           <div class="form-group">
             <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" placeholder="name@domain.com" required />
+            <input type="email" id="email" name="email" placeholder="name@domain.com" maxlength="100" required />
           </div>
 
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+            <textarea id="message" name="message" placeholder="Type your message here..." maxlength="2000" required></textarea>
           </div>
 
-          <button type="submit" class="submit-btn">Send Message</button>
+          <button type="submit" class="submit-btn" id="submit-button">Send Message</button>
         </form>
       </div>
     </section>
@@ -285,5 +314,15 @@
       <p>&copy; 2026 Abdul Moiz Satti &bull; Hosted on GitHub Pages</p>
     </footer>
   </div>
+
+  <script>
+    // Double submission prevention
+    const form = document.getElementById('main-contact-form');
+    const submitBtn = document.getElementById('submit-button');
+    form.addEventListener('submit', function() {
+      submitBtn.disabled = true;
+      submitBtn.innerText = 'Submitting...';
+    });
+  </script>
 </body>
 </html>
